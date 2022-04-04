@@ -1,0 +1,165 @@
+@import '../../assets/scss/shared.scss';
+
+.landingPageContainer{
+    margin-top: 65px;
+    min-height: calc(100vh - 65px);
+    position: relative; 
+    background-color:$color-background-primary;
+}
+
+.sectionContainer{
+    margin-top: 30px;
+    min-height: calc(100vh - 95px);
+    position: relative; 
+    background-color:$color-background-primary;
+}
+
+.next {
+  width: 150px;
+}
+
+.bannerContent{
+    font-size: $font-size-larger;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.actionBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  right: 8%;
+}
+
+.footerSection{
+    margin-top: 30px;
+    min-height: 30px;
+    position: relative; 
+    background-color:$color-primary-light;
+    &h1 {
+        color: $color-white!important;
+    }
+   
+}
+
+.overlayBlock{
+    //background-color:$color-background-primary;
+    color: $color-primary;
+    border-radius:12px;
+    position: absolute;
+    padding: 20px;
+    top: 20%;
+    left: 5%;
+    width: 950px;
+    box-shadow: -6px -6px 26px 0 $color-primary;  // #F7A440;
+    transition: max-height .5s ease-in;
+    border:1px solid rgba(255,255,255,0.20);
+    box-shadow: 6px 6px 16px 0 $color-primary;
+    //text-align: justify;
+}
+
+.cardContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.overlayCard{
+    //background-color:$color-background-primary;
+    color: #f6f8f5;
+    border-radius:12px;
+    position: relative;
+    margin-top: 8%;
+    cursor: pointer;
+    background-color: $color-blue-dark;
+    width: 250px;
+    height: 150px;
+    box-shadow: -6px -6px 26px 0 $color-blue-dark;  // #F7A440;
+    transition: max-height .5s ease-in;
+    border:0px solid rgba(94, 35, 35, 0.2);
+    box-shadow: 5px 5px 15px 0 $color-blue-dark;
+    text-align: center;
+}
+
+.overlayCardBottom{
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: darkorange;
+    width: 250px;
+    height: 35px;
+    border: 1px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10px;
+}
+
+.linkFlex{
+    display: flex;
+    color: $color-primary;
+    justify-content: space-between;
+    padding: 12px 32px;
+}
+
+.downloadLink{
+    letter-spacing: 0px;
+    line-height: 18px;
+    white-space: nowrap;
+    border-radius: 22px;
+    cursor: pointer;
+    padding: 12px 32px;
+    outline: none;
+    font-weight: bold;
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: -6px -6px 26px 0 $color-primary;  // #F7A440;
+    transition: max-height .5s ease-in;
+    border:1px solid rgba(255,255,255,0.20);
+    box-shadow: 6px 6px 16px 0 $color-primary;
+    
+}
+
+
+@media only screen and (min-width:300px) and (max-width:900px){
+    .overlayBlock{
+        width: auto;
+        margin: 0px 10px;
+        left: 0;
+    }
+
+
+}
+
+@media only screen and (min-width:300px) and (max-width:600px){
+    .bannerHeading{
+        font-size: $font-size-larger;
+    }
+    .bannerContent{
+        font-size: $font-size-small;
+    }
+    .linkFlex{
+        display: block;
+    }
+    .overlayBlock{
+        box-shadow: $color-primary;
+        top: 7%;
+        height: 250px;
+    }
+    .overlayBlockLegal{
+        bottom: 0%;
+    }
+    .bannerContentLegal{
+        font-size: x-small;
+    }
+    .downloadLink{
+        width:116px !important;
+    }
+}

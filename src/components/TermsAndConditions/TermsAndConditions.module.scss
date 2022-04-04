@@ -1,0 +1,67 @@
+@import '../../assets/scss/shared.scss';
+
+.container {
+  max-width: 1200px;
+  background-color: $color-white;
+  border-radius: 12px;
+  margin: $padding-medium;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -6px -6px 26px 0 $color-primary;  // #F7A440;
+  transition: max-height .5s ease-in;
+  border:1px solid rgba(255,255,255,0.20);
+  box-shadow: 6px 6px 16px 0 $color-primary;
+}
+
+.paragraph {
+  
+  font-size: $font-size-medium;
+  margin: $padding-large;
+}
+
+.strong {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  margin: $padding-medium $padding-small $padding-small $padding-small;
+}
+
+.title {
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  margin: $padding-medium $padding-small $padding-small $padding-small;
+  margin-left:35%;
+}
+
+.checkboxContainer {
+  margin: $padding-medium;
+}
+
+.contracted,
+.expanded {
+  max-height: 50vh;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, transparent 90%, $color-gray);
+}
+
+.expanded {
+  height: fit-content;
+  max-height: 1000000px;
+  overflow: scroll;
+  transition: max-height 1s linear;
+  background-image: none;
+}
+
+.marginBottomMedium {
+  margin-bottom: $padding-medium;
+}
+
+.marginTopMedium {
+  margin-top: $padding-medium;
+}
+
+.clickText {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-normal;
+  text-align: center;
+  cursor: pointer;
+}

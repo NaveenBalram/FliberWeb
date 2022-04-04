@@ -1,0 +1,35 @@
+@import '../../assets/scss/shared';
+
+.button {
+  padding: $padding-small;
+  background-color: $color-primary;
+  border-radius: 6px;
+  border: 3px solid transparent;
+  color: $color-off-white;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  //text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 500ms;
+  // box-shadow: 0 5px 5px 0 #00000040;
+
+  &.disabled {
+    background-color: $color-off-white;
+    color: transparentize($color-text, 0.8);
+    cursor: not-allowed;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    padding: $padding-small 50px;
+  }
+
+  &:hover {
+    transition-duration: 500ms;
+    box-shadow: 0 -3px 18px 0 $color-primary;
+  }
+}
+
+a.button.disabled {
+  pointer-events: none;
+}

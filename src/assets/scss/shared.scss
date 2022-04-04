@@ -1,0 +1,138 @@
+$color-black: #111;
+$color-black-light: #363636;
+$color-gray-dark: #bec5c8;
+$color-gray-darker: #78919e;
+$color-gray: #e0dbdb;
+$color-gray-light: lighten($color-gray, 5%);
+$color-gray-lighter: lighten($color-gray, 10%);
+$color-off-white-secondary: #f9fbfb;
+$color-off-white-tertiary: #fcfefe;
+$color-off-white: #eff3f5;
+$color-primary:#527318;
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-lighter: lighten($color-primary, 20%);
+$color-primary-lightest: lighten($color-primary, 30%);
+$color-primary-lightest-2: lighten($color-primary, 35%);
+$color-red: #f44336;
+$color-green: #50c779;
+$color-text: #172e43;
+$color-white: #fff;
+$color-background-primary:#FFFFFF;
+$color-yellow-dark: #F7A440;
+$color-blue-dark:#172e43;
+
+$font-weight-bold: 600;
+$font-weight-bolder:800;
+$font-weight-normal: 400;
+$font-weight-light: 300;
+$font-weight-thin: 100;
+
+$font-size-hero-xl: 56px;
+$font-size-hero-l: 48px;
+$font-size-hero: 30px;
+$font-size-largest: 30px;
+$font-size-larger: 25px;
+$font-size-large: 21px;
+$font-size-medium: 18px;
+$font-size-small: 15px;
+$font-size-smaller: 12px;
+$font-size-smallest: 10px;
+$font-size-largest-l : 32px;
+
+$breakpoint-large: 1024px;
+$breakpoint-medium-large: 900px;
+$breakpoint-medium: 768px;
+$breakpoint-small: 600px;
+$breakpoint-smaller: 420px;
+$breakpoint-xsmaller : 300px;
+
+$padding-hero: 120px;
+$padding-largest: 80px;
+$padding-larger: 60px;
+$padding-large: 40px;
+$padding-medium: 20px;
+$padding-small: 10px;
+$padding-smaller: 5px;
+$padding-smallest: 2px;
+
+$letter-spacing-small: 0.05em;
+
+$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.22);
+$text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+$transition-normal: 0.2s;
+
+$z-index-1: 1;
+$z-index-2: 2;
+
+$header-height: 65px;
+
+$box-shadow: 0 -3px 18px 0 #019dd5;
+$box-shadow-mobile: 0px 3px 15px 0px #019dd57d;
+
+// hack to override the react-select package height
+@mixin input-dropdown-height($height) {
+  /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+  :global {
+    .Select-input,
+    .Select-placeholder,
+    .Select-value,
+    .Select-value-label {
+      line-height: $height !important;
+      height: $height !important;
+    }
+  }
+}
+
+%link-text {
+  color: $color-primary;
+  font-weight: $font-weight-light;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+%h1-text {
+  font-size: $font-size-larger;
+  font-weight: $font-weight-light;
+  line-height: 1.6em;
+}
+
+%h2-text {
+  font-size: $font-size-large;
+  font-weight: $font-weight-light;
+  line-height: 1.6em;
+}
+
+%smooth-scrollbars {
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar:horizontal {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-track:horizontal {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track:hover,
+  &::-webkit-scrollbar-track:horizontal:hover {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-thumb:horizontal {
+    background: $color-off-white;
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive,
+  ::-webkit-scrollbar-thumb:horizontal:window-inactive {
+    background: $color-off-white;
+  }
+
+  &::-webkit-scrollbar-thumb:hover,
+  &::-webkit-scrollbar-thumb:horizontal:hover {
+    background: $color-off-white;
+  }
+}

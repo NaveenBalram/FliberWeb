@@ -1,0 +1,142 @@
+@import '../../assets/scss/shared.scss';
+
+.formStyle {
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  color:$color-primary;
+}
+
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:20px;
+}
+
+@media (max-width: $breakpoint-smaller) {
+  .row {
+    max-width: 350px;
+  }
+
+  .passwordWrapper {
+    width: 350px !important;
+  }
+}
+
+.heading {
+  margin-left: 10px;
+}
+
+.marginLine {
+  margin-top: 10px;
+}
+
+.customText {
+  height: 40px;
+  font-size: $font-size-large;
+  color: $color-black;
+  width: 100%;
+  min-width: 247px;
+}
+
+.customPassword {
+  width: 75%;
+}
+
+.customDropdown {
+  min-width: 250px !important;
+}
+
+.nextButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next {
+  margin: 15px 0 30px 0;
+  width: 250px;
+}
+
+.passwordWrapper {
+  width: 350px !important;
+}
+
+.passwordContainer {
+  width: 100%;
+}
+
+.horizontalBorder {
+  height: 1px;
+  background-color: $color-gray;
+}
+
+.lightText {
+  color: $color-white;
+}
+
+.required {
+  color: $color-red;
+  font-size: $font-size-medium;
+}
+
+.label {
+  height: 19px !important;
+  margin: 0;
+}
+
+.labelHeading {
+  height: 19px !important;
+  margin: $padding-medium;
+  font-size: $font-size-medium;
+
+}
+
+.positioningClass {
+  width: 100%;
+}
+
+.initial {
+  text-transform: uppercase;
+}
+
+.requiredSmall{
+  font-size: $font-size-smaller;
+}
+
+.accessLabel{
+  height: 19px !important;
+  margin: 0;
+  font-weight: 500;
+  color: $color-primary;
+}
+.denotesLabel{
+  font-weight: $font-weight-bolder;
+  margin: $padding-medium;
+}
+
+  .darkContainer {
+    h1,h2,h3,h4,h5 {
+      color:#0070ad !important
+    }
+    .headerStyle{
+      color:#0070ad !important;
+    }
+      .next{
+          background-color:#0070ad!important;
+      }
+    }

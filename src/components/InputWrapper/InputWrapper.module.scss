@@ -1,0 +1,96 @@
+@import '../../assets/scss/shared.scss';
+
+.container {
+  margin: 15px;
+  border-radius: 6px;
+  border: 3px solid transparent;
+}
+
+@media (max-width: $breakpoint-smaller) {
+  .row {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: $breakpoint-xsmaller ) {
+  .labelAndInputContainer,
+  .labelAndInputContainerError {
+    border: 3px solid $color-gray;
+    background-color: $color-white;
+    border-radius: 6px;
+    margin-top: 15px;
+    background-color: red;
+  }
+  .labelAndInputContainerError {
+    border: 1px solid $color-red !important;
+  }
+}
+
+.labelAndInputContainerError {
+  border: 3px solid $color-red !important;
+}
+
+.labelAndInputContainer,
+.labelAndInputContainerError {
+  border: 3px solid $color-gray;
+  background-color: $color-white;
+  border-radius: 6px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.labelAndInputContainer[disabled] {
+  border: 3px solid $color-gray-dark;
+  background-color: $color-gray;
+}
+
+.topPadding {
+  margin-top: $padding-medium;
+}
+
+.row,
+.labelAndInputContainer.row,
+.topPadding.row {
+  margin: $padding-large 0;
+}
+
+.label {
+  color: $color-text;
+  font-weight: $font-weight-bold;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 15px;
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+  z-index: $z-index-1;
+}
+
+.childrenWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.errorContainer {
+  margin: 3px 0 0 10px;
+  display: flex;
+  flex: 1;
+  height: 15px;
+  width: 100%;
+}
+
+.error,
+.disabled {
+  display: flex;
+  color: $color-red;
+  font-size: $font-size-smaller;
+  font-weight: $font-weight-bold;
+}
+
+.disabledLabel {
+  color: $color-gray-darker;
+}

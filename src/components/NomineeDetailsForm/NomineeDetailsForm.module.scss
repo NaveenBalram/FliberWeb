@@ -1,0 +1,129 @@
+@import '../../assets/scss/shared.scss';
+
+.formStyle {
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:5px;
+}
+
+@media (max-width: $breakpoint-smaller) {
+  .row {
+    max-width: 350px;
+  }
+
+  .passwordWrapper {
+    width: 350px !important;
+  }
+}
+
+.heading {
+  margin-left: 10px;
+}
+
+.marginLine {
+  margin-top: 10px;
+}
+
+.customText {
+  height: 40px;
+  font-size: $font-size-large;
+  color: $color-black;
+  width: 100%;
+  min-width: 300px;
+}
+
+.customPassword {
+  width: 75%;
+}
+
+.customDropdown {
+  min-width: 250px !important;
+}
+
+.nextButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: $padding-large;
+  flex-wrap: wrap;
+  width:95%;
+  margin-left: 8%;
+}
+
+.next {
+  margin: 15px 0 30px 0;
+  width: 250px;
+}
+
+.passwordWrapper {
+  width: 350px !important;
+}
+
+.passwordContainer {
+  width: 100%;
+}
+
+.horizontalBorder {
+  height: 1px;
+  background-color: $color-primary;
+}
+
+.lightText {
+  color: $color-primary;
+}
+
+.required {
+  color: $color-red;
+  font-size: $font-size-medium;
+}
+
+.label {
+  height: 19px !important;
+  margin: 0;
+}
+
+.labelHeading {
+  height: 19px !important;
+  margin: $padding-medium;
+  font-size: $font-size-medium;
+
+}
+
+.positioningClass {
+  width: 100%;
+}
+
+.initial {
+  text-transform: uppercase;
+}
+
+.requiredSmall{
+  font-size: $font-size-smaller;
+}
+
+.accessLabel{
+  height: 19px !important;
+  margin: 0;
+  font-weight: 400;
+}

@@ -1,0 +1,199 @@
+@import "../../assets/scss/shared.scss";
+
+.formStyle {
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  .choices{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  justify-content: center;
+  width: 900px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.buttonsdisplay {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.prevBtn {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+@media (max-width: $breakpoint-smaller) {
+  .row {
+    max-width: 350px;
+  }
+
+  .passwordWrapper {
+    width: 350px !important;
+  }
+}
+
+.heading {
+  margin-left: 10px;
+}
+
+.marginLine {
+  margin-top: 10px;
+}
+
+.customText {
+  height: 40px;
+  font-size: $font-size-large;
+  color: $color-black;
+  width: 100%;
+  min-width: 247px;
+}
+
+.customPassword {
+  width: 75%;
+}
+
+.customDropdown {
+  min-width: 250px !important;
+}
+
+.nextButton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.next {
+  margin: 15px 0 30px 0;
+  width: 250px;
+}
+
+.passwordWrapper {
+  width: 350px !important;
+}
+
+.passwordContainer {
+  width: 100%;
+}
+
+.horizontalBorder {
+  height: 1px;
+  background-color: $color-primary;
+}
+
+.lightText {
+  color: $color-primary;
+}
+
+.required {
+  color: $color-red;
+  font-size: $font-size-medium;
+}
+
+.label {
+  height: 19px !important;
+  margin: 0;
+}
+
+.labelHeading {
+  height: 19px !important;
+  margin: $padding-medium;
+  font-size: $font-size-large;
+  font-weight: 400;
+}
+
+.positioningClass {
+  width: 100%;
+}
+
+.initial {
+  text-transform: uppercase;
+}
+
+.requiredSmall {
+  font-size: $font-size-smaller;
+}
+
+.accessLabel {
+  height: 19px !important;
+  margin: 0;
+  font-weight: 400;
+}
+
+.rangesliderWidth {
+  width: 900px !important;
+}
+
+.choices{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.radioContainerOuter {
+  display: flex;
+  min-width: 25%;
+  > .radioContainer {
+    padding-right: $padding-small;
+    &:not(:last-child) {
+      max-width: 450px;
+    }
+  }
+  > .nestedRadioContainer {
+    margin-left: auto;
+    min-width: 30%;
+  }
+}
+
+.radioContainer {
+  color: $color-gray-darker;
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-width: 3.3%;
+  flex: 0 0 auto;
+  margin-bottom: $padding-medium;
+}
+
+.radio {
+  display: flex;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: $padding-small;
+  border-radius: 50%;
+  background-color: $color-off-white;
+}
+
+.checkedCircle {
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  background: $color-primary;
+  border-radius: 50%;
+}
+
+.labelRadio {
+  font-weight: $font-weight-light;
+}

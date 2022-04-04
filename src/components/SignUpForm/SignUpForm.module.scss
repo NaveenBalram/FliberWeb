@@ -1,0 +1,194 @@
+@import '../../assets/scss/shared.scss';
+
+.formStyle {
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formStyleNoMargin {
+  max-width: 1200px;
+  //margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containerResident{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0%;
+}
+
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:20px;
+}
+
+@media (max-width: $breakpoint-smaller) {
+  .row {
+    max-width: 350px;
+  }
+
+  .passwordWrapper {
+    width: 350px !important;
+  }
+}
+
+.heading {
+  margin-left: 10px;
+}
+
+.marginLine {
+  margin-top: 10px;
+}
+
+.customText {
+  height: 40px;
+  font-size: $font-size-large;
+  color: $color-black;
+  width: 100%;
+  min-width: 247px;
+}
+
+.customPassword {
+  width: 75%;
+}
+
+.customDropdown {
+  min-width: 250px !important;
+}
+
+.nextButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.next {
+  margin: 15px 0 30px 0;
+  width: 250px;
+}
+
+.passwordWrapper {
+  width: 350px !important;
+}
+
+.passwordContainer {
+  width: 100%;
+}
+
+.horizontalBorder {
+  height: 1px;
+  background-color: $color-primary;
+}
+
+.lightText {
+  color: $color-primary;
+}
+
+.required {
+  color: $color-red;
+  font-size: $font-size-medium;
+}
+
+.label {
+  height: 19px !important;
+  margin: 0;
+}
+
+.labelHeading {
+  height: 19px !important;
+  margin: $padding-medium;
+  font-size: $font-size-large;
+}
+
+.heroText {
+  color: $color-primary;
+  font-size: $font-size-largest;
+  font-weight: $font-weight-light;
+  margin:10px;
+}
+.positioningClass {
+  width: 100%;
+}
+
+.initial {
+  text-transform: uppercase;
+}
+
+.requiredSmall{
+  font-size: $font-size-smaller;
+}
+
+.accessLabel{
+  height: 19px !important;
+  margin: 0;
+  font-weight: 400;
+}
+
+//switch 
+
+.reactswitchcheckbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.reactswitchlabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+  margin-top:10px;
+}
+
+
+
+
+.reactswitchlabel .reactswitchbutton {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 45px;
+  height: 40px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.reactswitchcheckbox:checked + .reactswitchlabel .reactswitchbutton {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.reactswitchlabel:active .reactswitchbutton {
+  width: 60px;
+}

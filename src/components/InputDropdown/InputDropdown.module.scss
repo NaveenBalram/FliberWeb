@@ -1,0 +1,68 @@
+@import '../../assets/scss/shared.scss';
+
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+.dropdown :global {
+  // background-color: $color-white;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  margin: 3px 5px 0 5px;
+  height: 100%;
+  border-radius: 6px;
+
+  .Select-input,
+  .Select-placeholder,
+  .Select-value,
+  .Select-value-label {
+    line-height: 40px;
+    height: 40px;
+  }
+
+  .Select-placeholder {
+    opacity: 0.8;
+  }
+
+  .Select-control {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+
+  .Select-control,
+  .Select-input {
+    background: transparent !important;
+  }
+
+  .Select-menu-outer {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 3px 3px 0 #00000040;
+    z-index: $z-index-2;
+  }
+
+  .Select-option {
+    padding: 8px 10px;
+
+    &:hover {
+      background-color: $color-primary !important;
+    }
+
+    &.is-selected {
+      background-color: inherit;
+    }
+
+    &.is-focused {
+      background-color: $color-primary;
+    }
+  }
+}
+
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:global {
+  .Select--multi {
+    .Select-value,
+    .Select-value-label {
+      line-height: normal !important;
+      height: auto !important;
+    }
+  }
+}

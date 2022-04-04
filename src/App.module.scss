@@ -1,0 +1,13 @@
+@import './assets/scss/shared';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.mainContent {
+  align-self: center;
+  flex: 1;
+  width: 100%;
+}
+

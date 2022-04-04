@@ -1,0 +1,12 @@
+@import '../../assets/scss/shared.scss';
+
+.wrapper {
+  padding: 0 $padding-small;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: $padding-small;
+  max-height: 20px;
+}

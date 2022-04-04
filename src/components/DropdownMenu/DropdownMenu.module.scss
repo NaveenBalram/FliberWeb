@@ -1,0 +1,63 @@
+@import '../../assets/scss/shared';
+
+.arrow {
+  width: 26px;
+  height: 26px;
+  background-image: url('../../assets/img/fliber-user-male.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+    &:hover {
+      transition-duration: 0.25s;
+    }
+}
+
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+:global {
+  .dropdown__trigger {
+    cursor: pointer;
+  }
+
+  .dropdown__content {
+    border: 1px solid $color-primary;
+    background-color:$color-primary;
+    min-width: 220px;
+    z-index: $z-index-2;
+    border-radius: 6px;
+    position: absolute;
+    right:25px;
+    align-items: center;
+    margin-top: $padding-small;
+    font-size: $font-size-large;
+    padding:6px 10px;
+
+    a
+     {
+      width: 100%;
+      padding: 5px;
+      background: none;
+      color: $color-text;
+      font-size:$font-size-large;;
+      font-weight: $font-weight-light;
+      text-align: left;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.navAlign {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+}
+
+.iconsAlign {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.tooltip {
+  color:white
+}

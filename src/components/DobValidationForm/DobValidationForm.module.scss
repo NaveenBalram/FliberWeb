@@ -1,0 +1,161 @@
+@import '../../assets/scss/shared.scss';
+
+.formStyle {
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+[role=checkbox] {
+display: flex;
+flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:5px;
+}
+
+
+@media (max-width: $breakpoint-smaller) {
+  .row {
+    max-width: 350px;
+  }
+
+  .passwordWrapper {
+    width: 350px !important;
+  }
+}
+
+.heading {
+  margin-left: 10px;
+}
+
+.marginLine {
+  margin-top: 10px;
+}
+
+
+
+.customText {
+  height: 40px;
+  font-size: $font-size-large;
+  color: $color-black;
+  width: 100%;
+  min-width: 300px;
+}
+
+.customPassword {
+  width: 75%;
+}
+
+.customDropdown {
+  min-width: 250px !important;
+}
+
+.nextButton {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  margin-top: $padding-medium;
+  flex-wrap: wrap;
+  width:95%;
+  margin-left: 8%;
+}
+
+.next {
+  margin: 15px 0 30px 0;
+  width: 250px;
+}
+
+.downloadLink {
+  letter-spacing: 0px;
+  line-height: 18px;
+  white-space: nowrap;
+  //border: 1px solid $color-primary;
+  border-radius: 22px;
+  cursor: pointer;
+  padding: 12px 32px;
+  outline: none;
+  font-weight: bold;
+  background-color: $color-primary;
+  color: $color-white;
+  box-shadow: -6px -6px 26px 0 $color-primary; // #F7A440;
+  transition: max-height 0.5s ease-in;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 6px 6px 16px 0 $color-primary;
+}
+
+.linkFlex {
+  display: flex;
+  color: $color-primary;
+  justify-content: flex-end;
+  padding: 41px 32px;
+}
+
+.passwordWrapper {
+  width: 350px !important;
+}
+
+.passwordContainer {
+  width: 100%;
+}
+
+.horizontalBorder {
+  height: 1px;
+  background-color: $color-primary;
+}
+
+.lightText {
+  color: $color-primary;
+}
+
+.required {
+  color: $color-red;
+  font-size: $font-size-medium;
+}
+
+.label {
+  height: 19px !important;
+  margin: 0;
+}
+
+.labelHeading {
+  height: 19px !important;
+  margin: $padding-medium;
+  font-size: $font-size-medium;
+
+}
+
+.positioningClass {
+  width: 100%;
+}
+
+.initial {
+  text-transform: uppercase;
+}
+
+.requiredSmall{
+  font-size: $font-size-smaller;
+}
+
+.accessLabel{
+  height: 19px !important;
+  margin: 0;
+  font-weight: 400;
+}

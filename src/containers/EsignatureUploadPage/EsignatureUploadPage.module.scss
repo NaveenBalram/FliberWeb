@@ -1,0 +1,607 @@
+@import "../../assets/scss/shared.scss";
+
+.productListContainer {
+  margin-top: 45px;
+  min-height: calc(100vh - 65px);
+  padding: 1px 0%;
+}
+
+.heading {
+  margin: 0px 8%;
+  text-align: center;
+  color: $color-primary;
+  & h1 {
+    font-weight: $font-weight-light;
+    font-size: 42px;
+  }
+  font-size:25px;
+  padding-bottom: 25px;
+}
+.LabelInfo{
+  margin-top:18%;
+}
+
+.downloadLink {
+  letter-spacing: 0px;
+  line-height: 18px;
+  white-space: nowrap;
+  //border: 1px solid $color-primary;
+  border-radius: 22px;
+  cursor: pointer;
+  padding: 12px 32px;
+  outline: none;
+  font-weight: bold;
+  background-color: $color-primary;
+  color: $color-white;
+  box-shadow: -6px -6px 26px 0 $color-primary; // #F7A440;
+  transition: max-height 0.5s ease-in;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 6px 6px 16px 0 $color-primary;
+  cursor: pointer;
+}
+
+.linkFlex {
+  display: flex;
+  color: $color-primary;
+  font-size: 18px;
+  justify-content: center;
+  
+}
+
+.upload{
+  opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+.actionBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $padding-large;
+  flex-wrap: wrap;
+  width:95%;
+  margin-left: 8%;
+}
+
+.paragraphInfo{
+  font-size: medium;
+}
+
+.productLogo {
+  height: 100px;
+  width: 200px;
+  //display: flex;
+  align-self: center;
+  margin-bottom: 15px;
+  object-fit: contain;
+  margin-top:15px;
+}
+
+.productLogoImage {
+  height: 300px;
+  width: 300px;
+  //display: flex;
+  align-self: center;
+  margin-bottom: 15px;
+  object-fit: contain;
+  margin-top:15px;
+}
+
+
+.heroSubTextMedium {
+  color: $color-primary!important;
+  font-size: 34px;
+  font-weight: $font-weight-light;
+  padding-left:25%;
+}
+.headingAlign{
+  margin-top: 4%;
+  text-align: center;
+  color: $color-primary;
+  & h1 {
+   
+    font-weight: $font-weight-thin;
+    font-size: $font-size-largest-l;
+  }
+}
+
+.headingHowText{
+  margin: 0px 15%;
+  text-align: center;
+  color: $color-primary;
+  & h1 {
+    font-weight: $font-weight-thin;
+    font-size: $font-size-largest-l;
+    
+  }
+}
+
+.scrollTops{
+  padding-top: 20px;
+  text-align: center;
+
+}
+.subHeading {
+  & h2 {
+    color: $color-primary !important;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-largest;
+  }
+  & h3 {
+    color: $color-primary-dark !important;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-large;
+  }
+  & div{
+    color: $color-primary-dark !important;
+    font-weight: $font-weight-light;
+    font-size: $font-size-large;
+  }
+}
+.spinner {
+  height: calc(100vh - #{$header-height});
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: $padding-small 0px;
+  & button:first-child {
+    margin-right: $padding-large;
+  }
+  & button:hover {
+    transform: scale(1.2);
+  }
+
+}
+
+.darkContainer {
+  h1,h2,h3,h4,h5,p {
+    color: rgb(0, 112, 173) !important;
+  }
+  Button{
+    background-color:  rgb(0, 112, 173) !important;
+  }
+  .headerStyle{
+    color: rgb(0, 112, 173) !important;
+  }
+  .heading {
+    color: rgb(0, 112, 173) !important;
+  }
+  .overlayBlockLegal {
+    background-color: $color-white!important;
+    color: $color-white!important;
+    font-weight: 500;
+  }
+}
+
+.buttonStyle {
+  background-color: $color-primary !important;
+  color: $color-white !important;
+  width:318px;
+}
+.productArray {
+ // padding: 2% 6%;
+  text-align: center;
+  & h2,
+  h3 {
+    color: $color-black;
+    font-weight: $font-weight-light;
+  }
+}
+.productIndividual {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  transition: height 0.5s ease-in;
+  overflow: hidden;
+ 
+}
+.viewMoreButton {
+  margin-top: $padding-medium;
+}
+
+.scrollOverlayContainer {
+  position: absolute;
+  //bottom: 0%;
+  left: 5%;
+  right: 5%;
+}
+
+.scrollOverlay {
+  display: flex;
+  flex-direction: column;
+}
+
+.textScroll {
+  position: relative;
+  margin: 0 auto 0 auto;
+  color: $color-primary;
+  bottom: 0;
+  font-weight: $font-weight-bold;
+  margin-bottom: 10px;
+}
+
+.chevron {
+  display: block;
+  animation: pulse 10s infinite;
+  color: $color-primary;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.chevron::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    vertical-align: top;
+    width: 20px;
+    cursor: pointer;
+  }
+  .chevronafter {
+    display: block;
+    animation: pulse 10s infinite;
+    color: $color-primary;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .chevronafter::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    animation: pulse 2s infinite;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    -webkit-transform: rotate(316deg);
+    -ms-transform: rotate(316deg);
+    transform: rotate(316deg);
+    vertical-align: top;
+    width: 20px;
+    cursor: pointer;
+  }
+
+@media only screen and (min-width: $breakpoint-xsmaller) and (max-width: $breakpoint-small) {
+
+  .headingAlign{
+  padding-top: 8px!important;
+  }
+
+  .heading {
+    margin: 0 4%;
+    & h1 {
+      font-size: $font-size-large;
+    }
+  }
+  .buttonContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & button:first-child {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  .LabelInfo{
+  margin-top:60%;
+
+}
+.heroSubTextMedium {
+  display: flex;
+  color: $color-primary!important;
+  font-size: 21px;
+  font-weight: $font-weight-light;
+  padding-left:15%;
+  max-width: 400px;
+}
+
+}
+.heroText {
+  font-size: 32px !important;
+  font-weight: $font-weight-light !important;
+}
+
+
+.overlayBlockLegal {
+  background-color: #11111173;
+  color: $color-white!important;
+  border-radius: 10px;
+  //position: absolute;
+  padding: 20px;
+  bottom: 5%;
+  left: 5%;
+  margin-right: 20px;
+  margin-left: 15px;
+  box-shadow: 0px 3px 15px 0px #019dd57d;
+  padding-top: 25px;
+  //width: 800px;
+}
+.bannerHeadingLegal {
+  font-size: $font-size-small;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.bannerContentLegal {
+  font-size: $font-size-small;
+  margin-top: 0;
+}
+
+.bannerDisplayFlex {
+    display:flex;
+    justify-content: space-between;
+}
+
+.bannerHeadingClose{
+    font-size: $font-size-small;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.bannerHeading {
+  
+  font-size: $font-size-largest;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+.bannerContent {
+  font-size: $font-size-large;
+  margin-top: 0;
+}
+.linkFlex {
+  display: flex;
+  color: $color-white;
+  justify-content: center;
+  
+}
+.signUpItem {
+  & a {
+    font-weight: bold;
+  }
+}
+.viewLegalLink {
+  & a {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+
+  .headingAlign{
+    padding-top: 8px!important;
+    }
+  .overlayBlock {
+    width: auto;
+    margin: 0px 10px;
+    left: 0;
+  }
+
+  .overlayBlockLegal {
+    width: auto;
+    margin: 10px 10px;
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .headingAlign{
+    padding-top: 8px!important;
+    }
+
+  .bannerHeading {
+    font-size: $font-size-larger;
+  }
+  .bannerContent {
+    font-size: $font-size-small;
+  }
+  .linkFlex {
+    display: block;
+  }
+  .landingPageContainer {
+    // background: url("../../assets/img/aflac-connect-banner-mobile-image.jpg")
+    //   no-repeat center center/cover;
+  }
+  .overlayBlock {
+    box-shadow: $box-shadow-mobile;
+    top: 2%;
+    height: 230px;
+    width: auto;
+  }
+  .overlayBlockLegal {
+    height: 223px;
+    //top: 39%;
+  }
+
+  .bannerContentLegal {
+    font-size: 12px;
+  }
+  .bannerHeadingClose {
+    font-size: 11px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width:667px) and (-webkit-min-device-pixel-ratio: 2) 
+and (device-aspect-ratio : 375/667)
+and (aspect-ratio : 667/375)
+and (orientation: portrait) {
+    .overlayBlockLegal {
+        height: auto;
+        top: auto;
+      }
+}
+
+@media only screen and (min-width: 375px) and (max-width:812px) and (-webkit-min-device-pixel-ratio: 2) {
+    .overlayBlockLegal {
+        height: auto;
+        top: 48%;
+      }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3){
+    .bannerHeading {
+        font-size: $font-size-larger;
+      }
+      .bannerContent {
+        font-size: 12px;
+      }
+      .linkFlex {
+        display: block;
+      }
+      .landingPageContainer {
+        // background: url("../../assets/img/aflac-connect-banner-mobile-image.jpg")
+        //   no-repeat center center/cover;
+      }
+      .overlayBlock {
+        box-shadow: $box-shadow-mobile;
+        top: 2%;
+        height: 230px;
+        width:auto;
+    
+      }
+      .overlayBlockLegal {
+        height: auto;
+        top: auto;
+      }
+    
+      .bannerHeadingClose {
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 4px;
+        font-weight: bold;
+      }
+}
+
+
+
+
+// @media only screen and (min-width: 300px) and (max-width: 800px) and (orientation: landscape) {
+//     .landingPageContainer {
+//         background: url("../../assets/img/aflac-connect-banner-mobile-image.jpg")
+//           no-repeat center center/cover;
+//       }
+
+// }
+
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .landingPageContainer {
+    // background: url("../../assets/img/aflac-connect-banner-mobile-image.jpg")
+    //   no-repeat center center/cover;
+  }
+
+  .overlayBlock {
+    background-color: #11111173;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    padding: 20px;
+    top: 3%;
+    left: 3%;
+    width: 650px;
+    box-shadow: 0px 3px 15px 0px #019dd57d;
+  }
+
+  .overlayBlockLegal {
+      bottom: 35%!important;
+     }
+
+    
+}
+
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .landingPageContainer {
+    // background: url("../../assets/img/aflac-connect-banner-mobile-image.jpg")
+    //   no-repeat center center/cover;
+  }
+
+  .overlayBlock {
+    background-color: #11111173;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    padding: 40px;
+    top: 3%;
+    left: 2% !important;
+    width: 600px !important;
+    box-shadow: 0px 3px 15px 0px #019dd57d;
+  }
+
+  .overlayBlockLegal {
+    bottom: 38%!important;
+    left:2% !important;
+   }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+
+  .headingAlign{
+    padding-top: 8px!important;
+    }
+  .container {
+    // background: url("../../assets/img/Aflac_connect_contactUs_750mobile.jpg")
+    //   no-repeat top top/cover;
+    justify-content: flex;
+  }
+
+  .overlayBlockLegal {
+    background-color: #11111173;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    padding: 20px;
+    bottom: 45%;
+    left: 5%;
+    margin-right: 20px
+  }
+  .bannerHeadingLegal {
+    font-size: $font-size-large;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .bannerContentLegal {
+    font-size: $font-size-large;
+  }
+
+  .overlayBlock {
+    background-color: #11111173;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    padding: 25px;
+    top: 4%;
+    left: 5% !important;
+    width: 740px !important;
+    box-shadow: 0px 3px 15px 0px #019dd57d;
+  }
+
+  .bannerHeading {
+    font-size: $font-size-hero-l;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: lighter;
+  }
+  .bannerContent {
+    font-size: $font-size-large;
+    margin-top: 0;
+  }
+
+  .signUpItem {
+    & a {
+      font-weight: bold;
+    }
+  }
+}

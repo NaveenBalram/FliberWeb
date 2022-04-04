@@ -1,0 +1,50 @@
+@import '../../assets/scss/shared.scss';
+
+.formStyle {
+	max-width: 1200px;
+	margin: 0 auto 30px auto;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.customText {
+	height: 40px;
+	font-size: $font-size-large;
+	color: $color-black;
+	width: 120%;
+}
+
+.customPassword {
+	width: 75%;
+}
+
+.nextButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.next {
+	margin-top: 20px;
+	min-width: 300px;
+}
+
+@media screen and (orientation: landscape) and (max-width: $breakpoint-large) {
+	.formStyle {
+		max-width: 1200px;
+		margin: 0 auto 30px auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+}

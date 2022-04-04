@@ -1,0 +1,143 @@
+@import '../../assets/scss/shared';
+
+.container {
+  padding: $header-height $padding-medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 45px;
+  min-height: calc(100vh - 65px);
+}
+
+.darkContainer {
+  background-color: $color-black;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.divContainer {
+  text-align: center;
+  color: $color-primary;
+  & h1 {
+    font-weight: $font-weight-light;
+    font-size: 42px;
+  }
+  font-size:25px;
+}
+
+.subContainer2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: $padding-medium;
+}
+
+.subGoalTextHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items:flex-start;
+    width: 100%;
+    margin-bottom: $padding-medium;
+  }
+
+
+.spinner {
+  height: calc(100vh - #{$header-height});
+}
+
+.heroText {
+  color: $color-primary;
+  font-size: $font-size-hero-l;
+  font-weight: $font-weight-light;
+}
+
+.heroSubText {
+  color: $color-primary;
+  font-size: $font-size-large;
+  font-weight: $font-weight-light;
+  margin-top: $padding-medium;
+  margin-bottom:$padding-medium;
+}
+
+.productLogo {
+  height: 100px;
+  width: 200px;
+  //display: flex;
+  align-self: center;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.actionBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $padding-medium;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+.next {
+  width: 350px;
+}
+
+.normalHeaderSpacing {
+  margin-top: $padding-large;
+}
+
+.heroSubText2 {
+  font-size: $font-size-large;
+  font-weight: $font-weight-light;
+  margin-top: $padding-medium;
+  margin-bottom:$padding-medium;
+}
+
+.textLight {
+  color: $color-primary;
+}
+.goalText {
+    display: flex;
+    align-content:flex-start;
+    color: $color-primary;
+  }
+  
+
+.alertMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alertBtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.alertBtn button {
+  margin : 10px;
+}
+
+.alertDeleteBtn{
+padding: 3px;
+    text-transform: unset;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+.cancelBtn {
+  color:white;
+  font-weight: 400;
+}

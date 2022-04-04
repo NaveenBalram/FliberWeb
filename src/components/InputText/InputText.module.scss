@@ -1,0 +1,16 @@
+@import '../../assets/scss/shared.scss';
+
+.text {
+  margin: 0 10px;
+  border: 0;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.secondary {
+  background-color: $color-white;
+  border: solid 1px $color-off-white;
+}

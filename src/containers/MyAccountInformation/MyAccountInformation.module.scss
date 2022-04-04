@@ -1,0 +1,53 @@
+@import '../../assets/scss/shared';
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top:$padding-largest;
+}
+.spinner {
+	height: calc(100vh - #{$header-height});
+}
+
+@media (max-width: $breakpoint-smaller) {
+	.heroText {
+		font-size: $font-size-large !important;
+		font-weight: $font-weight-light !important;
+		padding:10px;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: $breakpoint-large) {
+	.heroText {
+		font-size: $font-size-medium !important;
+		font-weight: $font-weight-light !important;
+		padding:10px;
+	}
+}
+
+.heroText {
+	color: $color-primary;
+	font-size: $font-size-hero-l;
+	font-weight: $font-weight-light;
+}
+
+.heroSubText {
+	color: $color-primary;
+	font-size: $font-size-large;
+	font-weight: $font-weight-light;
+}
+
+.heading {
+	margin-left: 10px;
+}
+
+.darkContainer {
+	.a,div,h1,h2,h3,link, div{
+	  color: rgb(0, 112, 173);
+	  
+	}
+	.Button_button{
+	  color:red !important;
+	}
+  }

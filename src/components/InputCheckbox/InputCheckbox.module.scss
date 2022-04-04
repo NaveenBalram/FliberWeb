@@ -1,0 +1,109 @@
+@import '../../assets/scss/shared.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.checkboxItem,
+.selectedCheckboxItem,
+.errorCheckboxItem,
+.subLabelContainer {
+  display: inline-flex;
+  padding: 5px 15px 5px 5px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: $color-gray-light;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  border: 3px solid transparent;
+
+  &:hover {
+    box-shadow: 0 5px 15px 0 #00000040;
+  }
+}
+
+.subLabelContainer {
+  padding: $padding-small $padding-medium $padding-small $padding-small;
+  height: 35px;
+  border-radius: 35px;
+}
+
+.errorCheckboxItem {
+  border: 3px solid $color-red;
+}
+
+.error {
+  display: flex;
+  color: $color-red;
+  font-size: $font-size-smaller;
+  font-weight: $font-weight-bold;
+}
+
+.selectedCheckboxItem 
+  {
+  background-color: $color-primary-light;
+  box-shadow: 0 5px 5px 0 #00000040;
+  }
+
+
+.selectedCheckboxContainer,
+.unSelectedCheckboxContainer {
+  height: 29px;
+  width: 29px;
+  background-color: $color-white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unSelectedCheckbox,
+.selectedCheckbox {
+  height: 25px;
+  width: 25px;
+  filter: opacity(0);
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.selectedCheckbox {
+  filter: opacity(1);
+  opacity: 1;
+}
+
+.checkboxLabel,
+.checkboxLabel2 {
+  display: inline-block;
+  margin-left: 5px;
+  color: $color-text;
+  transition-duration: 0.5s;
+  font-weight: $font-weight-bold;
+}
+
+.checkboxLabel2 {
+  font-size: $font-size-large;
+}
+
+.checkboxSubLabel {
+  font-size: $font-size-small;
+  font-weight: $font-weight-light;
+}
+
+.required {
+  color: $color-red;
+  font-size: $font-size-medium;
+}
+
+.subTitle {
+  align-self: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color: #111;
+}

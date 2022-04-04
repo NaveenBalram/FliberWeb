@@ -1,0 +1,260 @@
+@import "../../assets/scss/shared";
+
+$black: #000000;
+$cornflower-lilac: #ffffff;
+$salmon:$color-primary;
+$white: #ffffff;
+$your-pink: $color-primary;
+
+.container {
+  padding: 0px 10px 25px 10px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.heading {
+  //padding-left: 10%;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+.darkContainer {
+  background-color: $color-black;
+}
+
+@media (max-width: $breakpoint-medium) {
+  .textSection {
+    font-size: $font-size-largest !important;
+  }
+}
+
+@media (max-width: $breakpoint-smaller) {
+  .heroText {
+    font-size: $font-size-hero-l !important;
+    font-weight: $font-weight-light !important;
+    margin: 0px 10px;
+  }
+  .heading {
+    margin-right: 0px;
+  }
+
+  .heroSubText {
+    font-size: $font-size-medium !important;
+    font-weight: $font-weight-light !important;
+    margin: 0px 10px;
+  }
+
+  .textSection {
+    font-size: $font-size-large !important;
+    font-weight: $font-weight-light !important;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: $breakpoint-large) {
+  .heroText {
+    font-size: $font-size-medium !important;
+    font-weight: $font-weight-light !important;
+  }
+
+  .heading {
+    margin-right: 0px;
+  }
+
+  .heroSubText {
+    font-size: $font-size-small !important;
+    font-weight: $font-weight-light !important;
+  }
+
+  .textSection {
+    font-size: $font-size-medium !important;
+    font-weight: $font-weight-light !important;
+  }
+
+  .chevron {
+    animation: pulseHalf 2s infinite !important;
+  }
+}
+
+.heroText {
+  color: $color-primary;
+  font-size: $font-size-hero-l;
+  font-weight: $font-weight-light;
+}
+
+.heroSubText {
+  color: $color-primary;
+  font-size: $font-size-large;
+  font-weight: $font-weight-light;
+}
+
+.nextButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next {
+  width: 250px;
+}
+
+.link {
+  font-weight: $font-weight-bold;
+}
+
+
+.ccheckbox {
+    display: none;
+
+    &:checked + .cformContainer {
+        .cform {
+            width: 37.5em;
+        }
+
+        .cform__toggle {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0.7);
+        }
+
+        .cform__input,
+        .cform__buttonLabel {
+            transition: 0.2s 0.1s;
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &:not(:checked),
+    &:checked {
+        + .cformContainer .cform__input:required:valid ~ .cform__toggle::before {
+            // content: 'Thank You! \1F60A';
+        }
+    }
+
+    &:not(:checked) + .cformContainer {
+        .cform__input:required:valid ~ .cform__toggle {
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+}
+
+.cformContainer,
+.cform,
+.cform__toggle {
+    width: 20em;
+    height: 6.25em;
+}
+
+.cformContainer {
+    position: relative;
+    font-weight: 400;
+    margin-left:30%;
+}
+
+.cform,
+.cform__toggle {
+    position: absolute;
+    border-radius: 6.25em;
+    background-color: $white;
+    transition: 0.2s;
+}
+
+.cform {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.625em;
+    box-sizing: border-box;
+    box-shadow: 0 0.125em 0.3125em rgba($black, 0.3);
+
+    // position form inputs
+    display: flex;
+    justify-content: center;
+}
+
+.cform__toggle {
+    color: $salmon;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+
+    // position message
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        font-size: 1.75em;
+        content: attr(data-title);
+    }
+}
+
+.cform__input,
+.cform__button {
+    font: inherit;
+    border: 0;
+    outline: 0;
+    border-radius: 5em;
+    box-sizing: border-box;
+}
+
+.cform__input,
+.cform__buttonLabel {
+    font-size: 1.75em;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.7);
+    transition: 0s;
+}
+
+.cform__input {
+    color: $your-pink;
+    height: 100%;
+    width: 100%;
+    padding: 0 0.714em;
+
+    &::placeholder {
+        color: currentColor;
+    }
+
+    &:required:valid {
+        color: $salmon;
+
+        + .cform__buttonLabel {
+            color: $white;
+
+            &::before {
+                pointer-events: initial;
+            }
+        }
+    }
+}
+
+.cform__buttonLabel {
+    color: $cornflower-lilac;
+    height: 100%;
+    width: auto;
+    
+    // accepts click events
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        cursor: pointer;
+    }
+}
+
+.cform__button {
+    color: inherit;
+    padding: 0;
+    height: 100%;
+    width: 5em;
+    background-color: $salmon;
+}

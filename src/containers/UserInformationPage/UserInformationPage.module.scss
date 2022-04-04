@@ -1,0 +1,107 @@
+@import "../../assets/scss/shared";
+
+.container {
+  padding: 100px 10px 25px 10px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerNoMargin{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  //padding-left: 10%;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+.darkContainer {
+  background-color: $color-black;
+}
+
+@media (max-width: $breakpoint-medium) {
+  .textSection {
+    font-size: $font-size-largest !important;
+  }
+}
+
+@media (max-width: $breakpoint-smaller) {
+  .heroText {
+    font-size: $font-size-hero-l !important;
+    font-weight: $font-weight-light !important;
+    margin: 0px 10px;
+  }
+  .heading {
+    margin-right: 0px;
+  }
+
+  .heroSubText {
+    font-size: $font-size-medium !important;
+    font-weight: $font-weight-light !important;
+    margin: 0px 10px;
+  }
+
+  .textSection {
+    font-size: $font-size-large !important;
+    font-weight: $font-weight-light !important;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: $breakpoint-large) {
+  .heroText {
+    font-size: $font-size-medium !important;
+    font-weight: $font-weight-light !important;
+  }
+
+  .heading {
+    margin-right: 0px;
+  }
+
+  .heroSubText {
+    font-size: $font-size-small !important;
+    font-weight: $font-weight-light !important;
+  }
+
+  .textSection {
+    font-size: $font-size-medium !important;
+    font-weight: $font-weight-light !important;
+  }
+
+  .chevron {
+    animation: pulseHalf 2s infinite !important;
+  }
+}
+
+.heroText {
+  color: $color-primary;
+  font-size: $font-size-hero-l;
+  font-weight: $font-weight-light;
+}
+
+.heroSubText {
+  color: $color-primary;
+  font-size: $font-size-large;
+  font-weight: $font-weight-light;
+}
+
+.nextButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next {
+  width: 250px;
+}
+
+.link {
+  font-weight: $font-weight-bold;
+}
